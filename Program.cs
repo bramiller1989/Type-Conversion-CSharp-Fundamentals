@@ -37,6 +37,20 @@ namespace TypeConversion
             {
                 Console.WriteLine("The number could not be converted to a byte");
             }
+
+            Console.WriteLine("-----------------------------------------------");
+
+            try
+            {
+                Console.WriteLine("Convert non compatible type - string to bool using Convert.ToBoolean()");
+                string str = "true";
+                bool bl = Convert.ToBoolean(str);
+                Console.WriteLine(bl);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("String could not be converted to a bool");
+            }
         }
     }
 }
