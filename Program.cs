@@ -17,6 +17,13 @@ namespace TypeConversion
             i = 1;
             b = (byte)i;
             Console.WriteLine(b);
+
+            Console.WriteLine("-----------------------------------------------");
+
+            Console.WriteLine("Convert non compatible type - string to int using Convert.ToInt32()");
+            var number = "1234";
+            int stringToInt = Convert.ToInt32(number);
+            Console.WriteLine(stringToInt);
         }
     }
 }
